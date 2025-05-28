@@ -9,17 +9,11 @@
        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
       </div>
       <ul
-        tabindex="0"
         class="menu menu-sm dropdown-content">
-        <li><a>Item 1</a></li>
+        <li><a href="/">Home</a></li>
         <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
+          <a href="/overview">View Data</a>
         </li>
-        <li><a>Item 3</a></li>
       </ul>
     </div>
     <a class="btn btn-ghost text-xl" href="/"><Logo></Logo></a>
@@ -32,6 +26,6 @@
     </ul>
   </div>
   <div class="navbar-end mr-2">
-    <a class="btn btn-ghost">Publication</a>
+    <a class="btn btn-ghost">Publication<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
   </div>
 </div>

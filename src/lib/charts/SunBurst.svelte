@@ -71,8 +71,6 @@
 		];
 
 		const option = {
-            title: {
-                text: 'Significant Analytes Per Cohort',},
 			tooltip: {},
 			series: {
 				type: 'sunburst',
@@ -84,9 +82,11 @@
 				radius: [0, '90%'],
 				label: {
 					rotate: 'radial',
-					minAngle: 2
+					minAngle: 5,
+                    
 				},
-                levels: [{}, {}, {nodeClick: false}]
+                levels: [{}, {}, {nodeClick: false, label: {formatter: '{b} (n = {c})',
+                    fontSize: 9}}]
 			}
 		};
 		myChart.setOption(option);
