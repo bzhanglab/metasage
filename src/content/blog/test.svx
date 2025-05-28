@@ -1,0 +1,13 @@
+---
+title: "My First Post"
+date: "2025-05-20"
+---
+
+# Hello World
+
+This is my first mdsvex post!
+
+```py
+def hello(name: str) -> str:
+    return f"Hello {name}"
+```
