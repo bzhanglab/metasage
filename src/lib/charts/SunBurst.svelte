@@ -2,13 +2,10 @@
 	import * as echarts from 'echarts/core';
 	import { SunburstChart } from 'echarts/charts';
 	import academic_theme from '$lib/charts/academic.json';
-	// Import the title, tooltip, rectangular coordinate system, dataset and transform components
+	// Import the title and tooltip components
 	import {
 		TitleComponent,
 		TooltipComponent,
-		LegendComponent,
-		DatasetComponent,
-		TransformComponent
 	} from 'echarts/components';
 	// Import the Canvas renderer
 	import { CanvasRenderer } from 'echarts/renderers';
@@ -19,9 +16,6 @@
 		SunburstChart,
 		TitleComponent,
 		TooltipComponent,
-		LegendComponent,
-		DatasetComponent,
-		TransformComponent,
 		CanvasRenderer
 	]);
 	let chart_div: HTMLDivElement;
