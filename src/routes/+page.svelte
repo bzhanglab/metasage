@@ -29,15 +29,15 @@
 			</p>
 		</div>
 	</div>
-	
+
 	<fieldset class="fieldset rounded-box h-max w-full border border-gray-100 p-4 shadow-sm">
 		<legend class="fieldset-legend">Search</legend>
-		<label class="label font-black">Search for Metabolite</label>
-		<input type="text" class="input w-full" placeholder="HMDB ID (i.e. HMDB00012)" />
-		<label class="label font-black">Search for Gene</label>
-		<input type="text" class="input w-full" placeholder="Gene Symbol (i.e. ESR1)" />
-		<label class="label font-black">Search by Cohort</label>
-		<select class="select w-full text-gray-500"> 
+		<label for="metabolite_search" class="label font-black">Search for Metabolite</label>
+		<input id="metabolite" type="text" class="input w-full" placeholder="HMDB ID (i.e. HMDB00012)" />
+		<label for="gene_search" class="label font-black">Search for Gene</label>
+		<input id="gene_search" type="text" class="input w-full" placeholder="Gene Symbol (i.e. ESR1)" />
+		<label for="cohort_search" class="label font-black">Search by Cohort</label>
+		<select id="cohort_search" class="select w-full text-gray-500"> 
 			<option disabled selected>Select Cohort</option>
 			<option>OV</option>
 			<option>CCRCC1</option>
