@@ -36,7 +36,7 @@
 <div class="hero pt-20">
 	<div class="hero-content text-center">
 		<div class="max-w-md">
-			<h1 class="text-5xl font-bold"><Logo></Logo></h1>
+			<h1 class="text-5xl font-bold"><Logo width="50%"></Logo></h1>
 			<p class="py-6">
 				Robust discovery of metabolite regulation and therapeutic insights in cancer.
 			</p>
