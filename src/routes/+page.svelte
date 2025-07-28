@@ -4,6 +4,7 @@
 	import Logo from '$lib/components/Logo.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
 	import { onMount } from 'svelte';
+	import AutoComplete from '$lib/components/AutoComplete.svelte';
 
 	let metabolite_search: HTMLInputElement;
 	let gene_search: HTMLInputElement;
@@ -40,7 +41,7 @@
 			<p class="py-6">
 				Robust discovery of metabolite regulation and therapeutic insights in cancer.
 			</p>
-			<a class="btn btn-primary btn-outline" href="/overview">View Results</a>
+			<a class="btn btn-primary btn-outline hover:text-white hover:bg-blue-500 border-blue-500 text-blue-500 btn-wide" href="/overview">View Results</a>
 		</div>
 	</div>
 </div>
@@ -60,21 +61,9 @@
 	<fieldset class="fieldset rounded-box h-max w-full border border-gray-100 p-4 shadow-sm">
 		<legend class="fieldset-legend">Search</legend>
 		<label for="metabolite_search" class="label font-black">Search for Metabolite</label>
-		<input
-			bind:this={metabolite_search}
-			id="metabolite_search"
-			type="text"
-			class="input w-full"
-			placeholder="HMDB ID (i.e. HMDB00012)"
-		/>
+		<AutoComplete bind:this={metabolite_search} placeholder_text="HMDB ID or Metabolite Name" prefix="Metabolite" init_items={["Jerry", "Josh", "Gerald"]} custom_error_msg="Hello World" on_search={(val) => {console.log(val)}}></AutoComplete>
 		<label for="gene_search" class="label font-black">Search for Gene</label>
-		<input
-			bind:this={gene_search}
-			id="gene_search"
-			type="text"
-			class="input w-full"
-			placeholder="Gene Symbol (i.e. ESR1)"
-		/>
+		<AutoComplete bind:this={gene_search} placeholder_text="Gene Symbol" prefix="Gene" init_items={["Jerry", "Josh", "Gerald"]} custom_error_msg="Hello World" on_search={(val) => {console.log(val)}}></AutoComplete>
 		<label for="cohort_search" class="label font-black">Search by Cohort</label>
 		<select bind:this={cohort_search} id="cohort_search" class="select w-full text-gray-500">
 			<option disabled selected>Select Cohort</option>
