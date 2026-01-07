@@ -1,6 +1,6 @@
 # MetaSage
 
-Use `xgboost` to predict metabolites abundance, and use importance scores to determine metabolites and enzymes important for prediction.
+A machine learning–based framework designed to systematically infer regulatory mechanisms underlying metabolic dysregulation in different conditions
 
 ## Installation
 
