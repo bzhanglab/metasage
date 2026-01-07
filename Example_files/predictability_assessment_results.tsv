@@ -1,0 +1,49 @@
+meta	pearson_corr	p-value
+D-Maltose	0.8157	5.79E-14
+Maltotriose	0.7543	4.53E-11
+Taurochenodesoxycholic acid	0.6912	7.21E-09
+Uridine 5'-diphosphate	0.6771	1.89E-08
+Taurocholic acid	0.6646	4.25E-08
+1-Methylhistamine	0.6403	1.85E-07
+Chenodeoxycholic acid glycine conjugate	0.6208	5.51E-07
+Dihydrothymine	0.5388	2.63E-05
+ADP	0.5089	8.52E-05
+Glycocholic acid	0.5079	8.86E-05
+Glutathione	0.4851	0.000200835
+Glycoursodeoxycholic acid	0.4256	0.001333615
+Uridine diphosphate glucuronic acid	0.4062	0.002304497
+D-Glucose	0.3771	0.004942304
+Deoxyinosine	0.3752	0.005182374
+"5,8,11-Eicosatrienoic acid"	0.3678	0.006221607
+Nicotinamide ribotide	0.3628	0.007019305
+Cholic acid	0.3581	0.007843974
+LysoPC(18:0 or 0:0)	0.3417	0.011431759
+LysoPC(18:1(9Z) or 0:0)	0.3371	0.012668286
+Dodecanoylcarnitine	0.3127	0.021338721
+Guanine	0.3011	0.02694224
+Quinolinic acid	0.2877	0.03488398
+N1-Acetylspermine	0.2787	0.041292323
+Ureidopropionic acid	0.2728	0.045944572
+Chenodeoxycholic acid	0.2606	0.056993106
+NADH	0.2567	0.060993685
+Thymine	0.2538	0.064100282
+Histamine	0.2357	0.086244839
+Guanidoacetic acid	0.2345	0.087845576
+6-Phosphogluconic acid	0.2237	0.103873982
+Gluconic acid	0.2196	0.110528342
+Docosatrienoic acid	0.2075	0.132257562
+Maltotetraose	0.1941	0.159637844
+p-Cresol sulfate	0.1718	0.214239923
+Taurodeoxycholic acid	0.1663	0.229323241
+Hypotaurine	0.1511	0.275450108
+Carnosine	0.1309	0.345384464
+Phenylpyruvic acid	0.0635	0.648523935
+Acetaminophen	0.0322	0.81692663
+Allantoin	0.0081	0.953904745
+L-Cystine	-0.0501	0.719008409
+Adipic acid	-0.0551	0.692060633
+"MG(0:0 or 20:4(5Z,8Z,11Z,14Z) or 0:0)"	-0.0723	0.603497572
+5-Androstenediol	-0.0805	0.562629378
+Kynurenic acid	-0.0904	0.515746576
+Acetylcholine	-0.2436	0.075915242
+Cysteinylglycine	-0.2936	0.031202937
