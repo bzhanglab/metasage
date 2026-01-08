@@ -43,9 +43,9 @@ Predictability_assessment.py
 ```
 This script implements an XGBoost-based regression model to assess the predictability of each target metabolite.
 
-**Input**: feature files generated in the last step
+- **Input**: feature files generated in the last step
 
-**Output**: a .tsv file summarizing model perfromance, including the coefficients and p-values of Peasron correlation between the observed and predicted metabolite abundance from 5-fold cross-validation.
+- **Output**: a .tsv file summarizing model perfromance, including the coefficients and p-values of Peasron correlation between the observed and predicted metabolite abundance from 5-fold cross-validation.
 
 ## Citation
 
