@@ -4,13 +4,16 @@ A machine learning–based framework designed to systematically infer regulatory
 
 ## Usage
 
-3 python scripts were included to match the 3 major steps of MetaSage:
+3 python scripts are provided, corresponding to the 3 major steps of MetaSage:
 
 ```shell
 Feature_generation.py
 ```
 
-This script was used to create the input file of each metabolite for downstream model training. The output file will contain the abundances of specific metabolite, and the features extracted from preprapred file:
+This script generates per-metabolite input files for downstream model training. For each target metabolite, the output file contains:
+- The abundance of the target metabolite
+- Multi-omics–derived features associated with that metabolite:
+
   gene_expression_file: gene expression matrix from omics data, eg RNASeq or proteomic. The first row should be the samples IDs and the first column should be the gene symbols. An example file is included in "Example_files" folder.
   metabolite_expression_file: metabolite expression matrix from metabolomic data. The first row should be the samples IDs and the first column should be the unified metabolite names. An example file is included in "Example_files" folder.
   meta_gene_relation_file: for each target metabolite, it's quantified associated genes and upstream reactants were curated from the known GEM and filtered based on the study-specific multi-omics datasets. An example file is included in "Example_files" folder.
