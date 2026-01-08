@@ -43,9 +43,18 @@ Predictability_assessment.py
 ```
 This script implements an XGBoost-based regression model to assess the predictability of each target metabolite.
 
-- **Input**: feature files generated in the last step
+- **Input**: feature files generated in the **Feature Generation** step
 
 - **Output**: a .tsv file summarizing model perfromance, including the coefficients and p-values of Peasron correlation between the observed and predicted metabolite abundance from 5-fold cross-validation.
+
+```shell
+Regulator_prioritization.py
+```
+This script re-tain the model using the complete datasets for metabolites identified as predictable in the previous step. Feature importance is evaluated using Shapley values (SHAP), and features are ranked according to their average absolute SHAP values. The top-ranking features are considered the most influential regulators of the corresponding metabolite.
+
+- **Input**: feature files generated in the **Feature Generation** step
+
+- **Output**: a .tsv file summarizing the average absolute SHAP values of all features, and a visualization illustrating the SHAP values at the individual-sample level.
 
 ## Citation
 
