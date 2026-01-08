@@ -17,7 +17,7 @@ This script generates per-metabolite input files for downstream model training. 
 The script requires the following input files:
 1. gene_expression_file
 Gene expression matrix derived from omics data (e.g., RNA-seq or proteomics).
- - Rows: genes (gene symbols)
+   - Rows: genes (gene symbols)
  - Columns: samples (sample IDs in the first row)
 An example file is provided in the Example_files folder.
 
