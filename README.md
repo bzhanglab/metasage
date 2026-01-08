@@ -2,27 +2,19 @@
 
 A machine learning–based framework designed to systematically infer regulatory mechanisms underlying metabolic dysregulation in different conditions
 
-## Installation
-
-Install from this repository using the below command
-
-```shell
-pip install git+https://github.com/bzhanglab/metasage
-```
-
-For help, run `metasage --help`
-
 ## Usage
 
-To initialize a project in your current directory run
+3 python scripts were included to match the 3 major steps of MetaSage:
 
 ```shell
-metasage init .
+Feature_generation.py
 ```
 
-This will create the project folder structure, as well as an example config file located at `config.toml`. Modify this config to match your project.
-
-To build the modifier feature matrix, run 
+This script was used to create the input file of each metabolite for downstream model training. The output file will contain the abundances of specific metabolite, and the features extracted from preprapred file:
+  gene_expression_file: gene expression matrix from omics data, eg RNASeq or proteomic. The first row should be the samples IDs and the first column should be the gene symbols. An example file is included in "Example_files" folder.
+  metabolite_expression_file: metabolite expression matrix from metabolomic data. The first row should be the samples IDs and the first column should be the unified metabolite names. An example file is included in "Example_files" folder.
+  meta_gene_relation_file: for each target metabolite, it's quantified associated genes and upstream reactants were curated from the known GEM and filtered based on the study-specific multi-omics datasets. An example file is included in "Example_files" folder.
+  ESTIMATE_score_results: matrix containing 4 infered scores from ESTIMATE, including stromal score, immune score, ESTIMATE score and tumor purity. An example file is included in "Example_files" folder.
 
 ```shell
 metasage build
